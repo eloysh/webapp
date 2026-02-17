@@ -40,7 +40,8 @@ def _share_keyboard(ref_link: str) -> Dict[str, Any]:
     }
 
 def _webapp_url() -> str:
-   webapp_url = f"{settings.PUBLIC_BASE_URL}/miniapp/"
+  webapp_url = f"{settings.PUBLIC_BASE_URL}/webapp/"
+
 
 async def ensure_user(storage: Storage, tg_user: Dict[str, Any], start_payload: Optional[str]):
     tg_id = tg_user["id"]
